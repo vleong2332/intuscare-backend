@@ -1,0 +1,36 @@
+{
+  "name": "intus-care-coding-assessments",
+  "version": "1.0.0",
+  "description": "Coding Assessments template repository for Intus Care",
+  "main": "src/bin/www.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "jest",
+    "server": "node ./dist/bin/www.js",
+    "build": "babel ./src --out-dir dist",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluenovaio/intus-care-coding-assessments.git"
+  },
+  "private": true,
+  "author": "@intus-care",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/bluenovaio/intus-care-coding-assessments/issues"
+  },
+  "homepage": "https://github.com/bluenovaio/intus-care-coding-assessments#readme",
+  "dependencies": {
+    "@babel/cli": "^7.17.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1"
+  }
+}
