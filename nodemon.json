@@ -1,7 +1,7 @@
 {
   "exec": "npm run clean && npm run build && npm run server",
   "watch": [
-    "app/*"
+    "src/*"
   ],
   "ignore": [
     "**/__tests__/**",
