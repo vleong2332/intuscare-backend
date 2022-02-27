@@ -7,6 +7,7 @@ describe('sum', () => {
     { a: -2, b: 2, output: 0 },
     { a: 2, b: -2, output: 0 },
     { a: 0, b: 0, output: 0 },
+    { a: 0, b: undefined, output: null },
   ].forEach(({ a, b, output }) => {
     it(`returns ${output} when adding together ${a} and ${b}`, () => {
       expect(math.sum(a, b)).toEqual(output);
@@ -16,10 +17,10 @@ describe('sum', () => {
 
 describe('subtract', () => {
   [
-    { a: 2, b: 2, output: 4 },
-    { a: -2, b: -2, output: -4 },
-    { a: -2, b: 2, output: 0 },
-    { a: 2, b: -2, output: 0 },
+    { a: 2, b: 2, output: 0 },
+    { a: -2, b: -2, output: 0 },
+    { a: -2, b: 2, output: -4 },
+    { a: 2, b: -2, output: 4 },
     { a: 0, b: 0, output: 0 },
     { a: undefined, b: 0, output: null },
   ].forEach(({ a, b, output }) => {
