@@ -11,8 +11,12 @@ import { math } from './handler/math';
 export function run (config) {
   const app = express();
 
+  // Middleware
+  // ------
+  app.use(express.json());
+
   // Routes
-  // ---
+  // ------
   generateRoute(app, '/math', 'POST', math);
 
   app.listen(config.port, () => {
