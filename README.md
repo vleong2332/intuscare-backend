@@ -13,7 +13,7 @@ Thank you for your interest in Intus Care! Please follow the below directions to
 
 - You MUST use node v16+
 - You MUST NOT use the built-in math functions
-- You MUST make sure all unit tests pass (these are provided in the __tests__ folder)
+- You MUST make sure all unit tests pass (these are provided in the __ tests __ folder)
 - You MUST make sure all APIs return the expected response (see the comments in the routes file)
 - You SHOULD clean up, add comments or any other improvements you believe this application could use.
 
