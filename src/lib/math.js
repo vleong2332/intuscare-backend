@@ -1,19 +1,23 @@
 export function sum (a, b) {
-  return;
+  if (typeof a !== "number" || typeof b !== "number") return null;
+  return a + b;
 }
 
 export function subtract(a, b) {
-  return;
+  if (typeof a !== "number" || typeof b !== "number") return null;
+  return a - b;
 }
 
 export function divide (a, b) {
-  return;
+  if (typeof a !== "number" || typeof b !== "number" || b === 0) return null;
+  return a / b;
 }
 
 export function multiply (a, b) {
-  return;
+  if (typeof a !== "number" || typeof b !== "number") return null;
+  return a * b;
 }
 
 export function mean (a) {
-  return;
+  return divide(a.reduce(sum, 0), a.length);
 }
